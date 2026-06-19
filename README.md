@@ -1,2 +1,21 @@
-# portal-app-i-game-com-cn
-爱游戏 - https://portal-app-i-game.com.cn
+# 爱游戏 - 游戏门户网站
+
+## 简介
+
+爱游戏是一个专注于游戏资讯与娱乐的门户网站，提供游戏新闻、攻略、社区互动等内容。通过访问 [https://portal-app-i-game.com.cn](https://portal-app-i-game.com.cn)，用户可以获取丰富的游戏资源与信息。爱游戏致力于为游戏爱好者打造一站式服务平台，让玩家轻松探索各类游戏内容。
+
+## 特点
+
+- **游戏资讯**：爱游戏汇集最新游戏动态，涵盖热门游戏、新作发布及行业趋势，帮助用户及时了解游戏世界。
+- **攻略资源**：在 [https://portal-app-i-game.com.cn](https://portal-app-i-game.com.cn)，爱游戏提供详尽的游戏攻略与技巧，助力玩家提升游戏体验。
+- **社区互动**：爱游戏支持用户参与讨论、分享心得，营造开放的游戏交流环境。
+- **便捷访问**：通过 [https://portal-app-i-game.com.cn](https://portal-app-i-game.com.cn)，爱游戏提供直观的界面与导航，方便用户快速找到所需内容。
+
+## 访问方式
+
+您可以通过以下方式访问爱游戏：
+
+- 直接访问网址：[https://portal-app-i-game.com.cn](https://portal-app-i-game.com.cn)
+- 在浏览器中搜索“爱游戏”或相关关键词，找到官方网站入口。
+
+爱游戏欢迎所有游戏爱好者前来探索，共同享受游戏的乐趣。

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wangngp000duffee.github.io/portal-app-i-game-com-cn/sitemap.xml
