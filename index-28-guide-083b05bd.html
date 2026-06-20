@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于加拿大28 · 一份日常检索与延伸阅读笔记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f7f5f2;
+            color: #2c2c2c;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+        }
+
+        /* 深色头图 —— 简化博客封面氛围 */
+        .hero {
+            background: #1f1c1a;
+            padding: 4.5rem 2rem 3.2rem;
+            text-align: center;
+            color: #e7e3de;
+            border-bottom: 3px solid #c9a87c;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 340;
+            letter-spacing: 2px;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #b7ab9e;
+            border-top: 1px solid #4b443c;
+            display: inline-block;
+            padding-top: 0.6rem;
+            margin-top: 0.1rem;
+        }
+
+        /* 正文容器 —— 浅色阅读区 */
+        .content {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2.6rem 1.8rem 4rem;
+        }
+
+        /* 导语卡片 —— 低调用色 */
+        .intro-note {
+            background: #f0ede8;
+            border-left: 4px solid #c9a87c;
+            padding: 1.2rem 1.6rem;
+            margin-bottom: 2.4rem;
+            font-size: 1.02rem;
+            border-radius: 0 6px 6px 0;
+            color: #3f3a35;
+        }
+
+        .intro-note strong {
+            color: #1f1c1a;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+        }
+
+        /* 引用/提示块 */
+        .quote-block {
+            background: #eae6df;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            font-style: normal;
+            position: relative;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .quote-block::before {
+            content: "📌 延伸阅读";
+            display: block;
+            font-weight: 540;
+            font-size: 0.9rem;
+            color: #8a7a6a;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.3rem;
+        }
+
+        /* 链接强调色 —— 自然嵌入句子 */
+        a {
+            color: #b0764a;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #d4b999;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #7a5435;
+            text-decoration-color: #7a5435;
+        }
+
+        /* 小标题：克制分隔 */
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 400;
+            margin: 2.2rem 0 0.8rem;
+            color: #2f2a25;
+            border-bottom: 1px solid #ddd8d0;
+            padding-bottom: 0.3rem;
+            letter-spacing: 0.2px;
+        }
+
+        /* 场景/特点 —— 无卡片，只用温和列表感 */
+        .scene-list {
+            list-style: none;
+            margin: 1.2rem 0 1.8rem;
+        }
+
+        .scene-list li {
+            padding: 0.4rem 0 0.4rem 1.4rem;
+            position: relative;
+            border-bottom: 1px dashed #e3ddd4;
+        }
+
+        .scene-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.4rem;
+            color: #b68f6b;
+            font-weight: bold;
+        }
+
+        /* faq 摘要 —— 极简 */
+        .faq-summary {
+            background: #ffffffd6;
+            border: 1px solid #e0d9d0;
+            border-radius: 14px;
+            padding: 1.6rem 1.8rem;
+            margin: 2.4rem 0 1.2rem;
+        }
+
+        .faq-summary dt {
+            font-weight: 480;
+            margin: 0.8rem 0 0.2rem;
+            color: #2d2822;
+        }
+
+        .faq-summary dd {
+            margin-left: 1rem;
+            color: #53504b;
+            font-size: 0.95rem;
+        }
+
+        .faq-summary dt:first-of-type {
+            margin-top: 0;
+        }
+
+        /* 访问句 —— 低调收尾 */
+        .visit-sentence {
+            margin-top: 2.8rem;
+            padding: 1.2rem 0;
+            border-top: 1px solid #dad3c9;
+            font-size: 1rem;
+            color: #3f3b35;
+            text-align: right;
+        }
+
+        /* 响应式 */
+        @media (max-width: 580px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 1.8rem 1rem 3rem;
+            }
+            .intro-note {
+                padding: 0.9rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero {
+                padding: 3rem 1rem 2.2rem;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>日常查询·对照·延伸</h1>
+        <span class="sub">一份关于加拿大28的阅读笔记</span>
+    </header>
+
+    <main class="content">
+
+        <!-- 导语 -->
+        <div class="intro-note">
+            <strong>导语</strong> —— 如果你也曾在数字间反复对照、在记录中寻找脉络，那么这篇笔记或许可以成为你翻阅途中的一处停顿。不是说明书，更像是一段并行的手记。
+        </div>
+
+        <p>
+            大概是从某个寻常的下午开始，我养成了一个习惯：打开一个页面，核对几组数字，再顺便看看相邻几期之间有没有模糊的呼应。<a href="https://index-28.com">加拿大28</a> 这个名称，最初只是从记录列表里跳出来的一个标签，后来慢慢变成了日常检索的一部分。谈不上痴迷，但总有一种“顺手点开、扫一眼”的惯性。
+        </p>
+
+        <p>
+            这种查询本身没什么戏剧性。更多时候，你只是在重复一个动作——输入、等待、对照。偶尔会发现某种细微的排列变化，然后在脑子里做一个简单的标记。它不是分析，更像是一种朴素的记录习惯。
+        </p>
+
+        <!-- 延伸引用块 -->
+        <div class="quote-block">
+            <p>
+                有时候，我甚至不为了某个具体结论而查。只是觉得，既然每天都打开，就顺便看看趋势有没有偏离上一周的模糊印象。这种无目的的对照，反而让数据变得像一种背景声音。
+            </p>
+        </div>
+
+        <h2>几个常见的使用场景</h2>
+        <ul class="scene-list">
+            <li>日常核对：打开页面，快速比对最新数字与手边记录的差异。</li>
+            <li>趋势观察：连续几天留意同一时段的数据，感受细微波动。</li>
+            <li>交叉对照：把不同来源的记录放在一起，找出自己习惯的参照系。</li>
+            <li>延伸翻阅：不局限于单期，回溯过去几十条记录，培养一种模糊的熟悉感。</li>
+        </ul>
+
+        <p>
+            这些场景听起来都很简单，但正是这种简单让查询变成了一件可以长期保持的事情。不需要复杂的工具，也不需要专门腾出时间——它就在那儿，像一个安静的参考点。
+        </p>
+
+        <h2>关于参照的节奏</h2>
+        <p>
+            我逐渐意识到，对照的价值不在于“准不准”，而在于它提供了一种坐标。你看着数字在某个区间内来回移动，心里就有了一个大致框架。超出框架的时候，你会多看一眼；在框架内波动，你就继续做别的事。这种节奏很自然，几乎不消耗注意力。
+        </p>
+
+        <p>
+            当然，每个人的参照习惯都不一样。有人喜欢固定时段，有人倾向于随机翻阅。我自己的做法是：每周挑两到三次，集中看一段连续记录，然后简单写几个字作为标记。它们大多都是“与上周相似”“偏离了一点”“又回到常见区间”这类平淡的短句。
+        </p>
+
+        <!-- FAQ 摘要 —— 克制问答 -->
+        <div class="faq-summary">
+            <dl>
+                <dt>Q：需要每天查询吗？</dt>
+                <dd>不一定。按自己的节奏来就好，过度频繁反而容易迷失在细节里。</dd>
+
+                <dt>Q：对照时应该关注什么？</dt>
+                <dd>更多是感受分布和趋势，而不是执着于单次数值。长期记录会自然浮现出一些模式。</dd>
+
+                <dt>Q：有什么推荐的起点？</dt>
+                <dd>从你手边最近的一条记录开始，往前延伸就好。不必追求完整，先建立自己的参照习惯。</dd>
+            </dl>
+        </div>
+
+        <p>
+            说到底，这种日常查询并不是为了追求什么结论。它更像是一种熟悉的动作——你打开页面，扫一眼，心里有了个印象，然后继续手头的事情。时间久了，那种模糊的熟悉感本身就是一种收获。
+        </p>
+
+        <!-- 访问句 —— 含蓄收尾 -->
+        <div class="visit-sentence">
+            如果你也恰好有类似的习惯，或许可以翻翻看 —— <a href="https://index-28.com">加拿大28</a> 就在那里，安静如常。
+        </div>
+
+    </main>
+
+</body>
+</html>
